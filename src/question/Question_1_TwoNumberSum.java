@@ -4,7 +4,7 @@ package question;
  * @author liupeidong
  * Created on 2019/4/1 22:20
  */
-public class TwoNumberSum {
+public class Question_1_TwoNumberSum {
 
     public static void main(String[] args) {
         int[] a = twoSum(new int[]{2, 7, 11, 15}, 9);
