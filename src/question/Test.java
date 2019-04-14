@@ -2,6 +2,7 @@ package question;
 
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Scanner;
 
 /**
  * @author liupeidong
@@ -9,37 +10,29 @@ import java.util.HashMap;
  */
 public class Test {
     public static void main(String[] args) {
-        HashMap<String, String> map = new HashMap<>();
-        map.put("liupeidong", "刘沛栋");
-        map.put("yangjiahao", "杨佳豪");
-        map.put("wangshun", "王舜");
-        map.put("wangaiji", "王埃及");
-        map.put("tianweikang", "田伟康");
-        map.put("wangzepeng", "王泽鹏");
-        map.put("maierdan", "买尔旦");
-        map.put("lixinyi", "李昕怡");
-        map.put("hujianwen", "胡鉴文");
-        map.put("wangshuai", "王帅");
-        map.put("chentengchuang", "陈腾创");
-        map.put("songzebing", "宋泽斌");
-        map.put("xuwenting", "许文婷");
-        map.put("mayixin", "马翌新");
-        map.put("shiyongxue", "史永雪");
-        map.put("zhangruiting", "张瑞婷");
-        map.put("zhourongyao", "周荣耀");
-        map.put("genazhen", "葛娜珍");
-        String[] strings = new String[]{"liupeidong", "yangjiahao", "wangshun",
-                "wangaiji", "tianweikang", "wangzepeng", "maierdan", "lixinyi", "hujianwen"};
-        String[] strings2 = new String[]{"wangshuai", "chentengchuang", "songzebing", "xuwenting",
-                "mayixin", "shiyongxue", "zhangruiting", "zhourongyao", "genazhen"};
-        Arrays.sort(strings);
-        Arrays.sort(strings2);
-        for (String s : strings) {
-            System.out.print(map.get(s)+" ");
+        Scanner sc = new Scanner(System.in);
+        int bzgs = sc.nextInt();
+        int bzrl = sc.nextInt();
+        int[] ybili = new int[bzgs];
+        int[] yrongliang = new int[bzgs];
+        for (int i = 0; i < bzgs; i++) {
+            ybili[i] = sc.nextInt();
         }
-        System.out.println();
-        for (String s : strings2) {
-            System.out.print(map.get(s)+" ");
+        for (int i = 0; i < bzgs; i++) {
+            yrongliang[i] = sc.nextInt();
+        }
+        double tem[] = new double[bzgs];
+        int flag = 0;
+        int where = -1;
+        for (int j = 1; ; j++) {
+            double sum = 0;
+            for (int i = 0; ; i++) {
+                tem[i] += 0.0001 * ybili[i];
+                if (tem[i] >= yrongliang[i]) {
+                    where = i;
+                }
+                sum += tem[i];
+            }
         }
     }
 }
