@@ -73,13 +73,11 @@ public class Question_2_AddTwoNumber {
         System.out.print(listNode.val + " ");
     }
 
-}
-
-
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode(int x) {
-        val = x;
+    static class ListNode {
+        int val;
+        ListNode next;
+        ListNode(int x) {
+            val = x;
+        }
     }
 }

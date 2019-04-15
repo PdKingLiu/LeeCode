@@ -3,7 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="62984f93-15a8-4829-9ed4-ed14cf1615b9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeeCode/question/Question_8_MyAtoi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeeCode/question/Question_8_MyAtoi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeeCode/algorithm_analysis/FullPermutation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeeCode/algorithm_analysis/FullPermutation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeeCode/question/ListNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeeCode/question/Question_2_AddTwoNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeeCode/question/Question_2_AddTwoNumber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeeCode/question/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeeCode/question/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithm_analysis/FullPermutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm_analysis/FullPermutation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/question/Question_2_AddTwoNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/question/Question_2_AddTwoNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/question/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/question/Test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,10 +26,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/question/Question_2_AddTwoNumber.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1320">
-              <caret line="61" column="20" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
+            <state relative-caret-position="-1297">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2325#2326#0" expanded="true" />
+                <element signature="e#2348#2349#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -56,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/algorithm_analysis/FullPermutation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1078">
-              <caret line="53" selection-start-line="53" selection-end-line="53" />
+            <state relative-caret-position="66">
+              <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,8 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/question/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="726">
-              <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+            <state relative-caret-position="264">
+              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,19 +117,14 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/question/Question_11_MaxArea.java">
+        <entry file="file://$PROJECT_DIR$/src/question/Question_10_LongestCommonPrefix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="34" column="23" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="34" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/algorithm_analysis/PrimeFactorization.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+            <state relative-caret-position="176">
+              <caret line="8" column="67" selection-start-line="8" selection-start-column="67" selection-end-line="8" selection-end-column="67" />
+              <folding>
+                <element signature="e#169#170#0" expanded="true" />
+                <element signature="e#250#251#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -146,17 +149,18 @@
         <option value="$PROJECT_DIR$/src/question/IntReversal.java" />
         <option value="$PROJECT_DIR$/src/question/PalindromeNumber.java" />
         <option value="$PROJECT_DIR$/src/question/Question_9_PalindromeNumber.java" />
-        <option value="$PROJECT_DIR$/src/question/Question_2_AddTwoNumber.java" />
         <option value="$PROJECT_DIR$/src/question/Question_3_LengthOfLongestSubstring.java" />
         <option value="$PROJECT_DIR$/src/question/Question_4_MedianOfTwoSortedArrays.java" />
         <option value="$PROJECT_DIR$/src/question/Question_4_FindMedianSortedArrays.java" />
         <option value="$PROJECT_DIR$/src/algorithm_analysis/PrimeFactorization.java" />
-        <option value="$PROJECT_DIR$/src/algorithm_analysis/FullPermutation.java" />
         <option value="$PROJECT_DIR$/src/question/Question_5_LongestPalindrome.java" />
-        <option value="$PROJECT_DIR$/src/question/Test.java" />
         <option value="$PROJECT_DIR$/src/question/Question_8_MyAtoi.java" />
         <option value="$PROJECT_DIR$/src/question/Question_10_MaxArea.java" />
         <option value="$PROJECT_DIR$/src/question/Question_11_MaxArea.java" />
+        <option value="$PROJECT_DIR$/src/question/Test.java" />
+        <option value="$PROJECT_DIR$/src/question/Question_2_AddTwoNumber.java" />
+        <option value="$PROJECT_DIR$/src/algorithm_analysis/FullPermutation.java" />
+        <option value="$PROJECT_DIR$/src/question/Question_10_LongestCommonPrefix.java" />
       </list>
     </option>
   </component>
@@ -268,13 +272,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Question_11_MaxArea">
-    <configuration name="FullPermutation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="algorithm_analysis.FullPermutation" />
+  <component name="RunManager" selected="Application.Question_10_LongestCommonPrefix">
+    <configuration name="Question_10_LongestCommonPrefix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="question.Question_10_LongestCommonPrefix" />
       <module name="LeeCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="algorithm_analysis.*" />
+          <option name="PATTERN" value="question.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -336,11 +340,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Question_10_LongestCommonPrefix" />
         <item itemvalue="Application.Question_11_MaxArea" />
         <item itemvalue="Application.Question_8_MyAtoi" />
         <item itemvalue="Application.Question_5_LongestPalindrome" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.FullPermutation" />
       </list>
     </recent_temporary>
   </component>
@@ -519,16 +523,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/question/Question_2_AddTwoNumber.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="61" column="20" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/question/Question_3_LengthOfLongestSubstring.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="858">
@@ -549,37 +543,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithm_analysis/FullPermutation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1078">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/question/Question_5_LongestPalindrome.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1078">
           <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/question/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithm_analysis/PrimeFactorization.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -594,6 +561,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/question/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/question/Question_2_AddTwoNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1297">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2325#2326#0" expanded="true" />
+            <element signature="e#2348#2349#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithm_analysis/FullPermutation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithm_analysis/PrimeFactorization.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/question/Question_11_MaxArea.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/question/Question_10_IsMatch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -601,10 +614,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/question/Question_11_MaxArea.java">
+    <entry file="file://$PROJECT_DIR$/src/question/Question_10_LongestCommonPrefix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="34" column="23" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="34" selection-end-column="23" />
+        <state relative-caret-position="176">
+          <caret line="8" column="67" selection-start-line="8" selection-start-column="67" selection-end-line="8" selection-end-column="67" />
+          <folding>
+            <element signature="e#169#170#0" expanded="true" />
+            <element signature="e#250#251#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

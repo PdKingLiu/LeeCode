@@ -1,10 +1,7 @@
 package algorithm_analysis;
 
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Scanner;
-
-import static java.util.Arrays.sort;
 
 /**
  * @author liupeidong
