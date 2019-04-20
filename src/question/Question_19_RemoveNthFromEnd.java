@@ -1,5 +1,7 @@
 package question;
 
+import common.ListNode;
+
 import java.math.BigInteger;
 
 /**
@@ -27,15 +29,6 @@ public class Question_19_RemoveNthFromEnd {
     static class List {
         boolean flag = false;
         ListNode listNode;
-    }
-
-    static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
     }
 
     public static ListNode removeNthFromEnd(ListNode head, int n) {

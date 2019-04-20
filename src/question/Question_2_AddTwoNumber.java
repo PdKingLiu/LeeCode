@@ -1,5 +1,7 @@
 package question;
 
+import common.ListNode;
+
 import java.math.BigInteger;
 import java.util.ArrayList;
 
@@ -71,13 +73,5 @@ public class Question_2_AddTwoNumber {
             listNode = listNode.next;
         }
         System.out.print(listNode.val + " ");
-    }
-
-    static class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int x) {
-            val = x;
-        }
     }
 }
