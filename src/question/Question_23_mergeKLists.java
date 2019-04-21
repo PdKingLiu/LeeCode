@@ -13,7 +13,7 @@ public class Question_23_mergeKLists {
     }
 
     public ListNode mergeKLists(ListNode[] lists) {
-
+        return null;
     }
 
 }
