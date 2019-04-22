@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="62984f93-15a8-4829-9ed4-ed14cf1615b9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeeCode/question/Question_191_HammingWeight.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeeCode/question/Question_191_HammingWeight.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeeCode/question/Question_23_mergeKLists.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeeCode/question/Question_23_mergeKLists.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/ListNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/question/Question_23_mergeKLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/question/Question_23_mergeKLists.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,17 +19,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/question/Question_23_mergeKLists.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+            <state relative-caret-position="44">
+              <caret line="8" column="36" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="36" />
+              <folding>
+                <element signature="method#mergeKLists#0;class#Question_23_mergeKLists#0" />
+                <element signature="method#mergeTwoList#0;class#Question_23_mergeKLists#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/question/Question_16_threeSumClosest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="14" selection-start-line="14" selection-end-line="40" selection-end-column="5" />
+              <folding>
+                <element signature="e#191#192#0" expanded="true" />
+                <element signature="e#264#265#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/common/ListNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="38" column="41" lean-forward="true" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
+            <state relative-caret-position="88">
+              <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -101,6 +114,7 @@
         <option value="$PROJECT_DIR$/src/question/Question_191_HammingWeight.java" />
         <option value="$PROJECT_DIR$/src/question/Question_23_mergeKLists.java" />
         <option value="$PROJECT_DIR$/src/common/ListNode.java" />
+        <option value="$PROJECT_DIR$/src/question/Question_16_threeSumClosest.java" />
       </list>
     </option>
   </component>
@@ -218,9 +232,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Question_23_mergeKLists">
-    <configuration name="Question_18_FourSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="question.Question_18_FourSum" />
+  <component name="RunManager" selected="Application.Question_16_threeSumClosest">
+    <configuration name="Question_16_threeSumClosest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="question.Question_16_threeSumClosest" />
       <module name="LeeCode" />
       <extension name="coverage">
         <pattern>
@@ -286,11 +300,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Question_16_threeSumClosest" />
         <item itemvalue="Application.Question_23_mergeKLists" />
         <item itemvalue="Application.Question_191_HammingWeight" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.Question_26_RemoveDuplicates" />
-        <item itemvalue="Application.Question_18_FourSum" />
       </list>
     </recent_temporary>
   </component>
@@ -329,7 +343,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3654391" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3654391" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -640,24 +654,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/question/Question_23_mergeKLists.java">
+    <entry file="file://$PROJECT_DIR$/src/question/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="35" column="38" lean-forward="true" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+        <state relative-caret-position="176">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/common/ListNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/question/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        <state relative-caret-position="88">
+          <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -668,6 +675,39 @@
           <folding>
             <element signature="e#164#165#0" expanded="true" />
             <element signature="e#246#247#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/question/Question_23_mergeKLists.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="36" />
+          <folding>
+            <element signature="method#mergeKLists#0;class#Question_23_mergeKLists#0" />
+            <element signature="method#mergeTwoList#0;class#Question_23_mergeKLists#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/JavaJDK/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/Math.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="1345" column="22" selection-start-line="1345" selection-start-column="22" selection-end-line="1345" selection-end-column="22" />
+          <folding>
+            <element signature="e#51932#51933#0" expanded="true" />
+            <element signature="e#51971#51972#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/question/Question_16_threeSumClosest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="14" selection-start-line="14" selection-end-line="40" selection-end-column="5" />
+          <folding>
+            <element signature="e#191#192#0" expanded="true" />
+            <element signature="e#264#265#0" expanded="true" />
           </folding>
         </state>
       </provider>
