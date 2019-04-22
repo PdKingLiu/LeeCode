@@ -35,6 +35,10 @@ public class ListNode {
     }
 
     public static void showList(ListNode listNode) {
+        if (listNode == null) {
+            System.out.println("[null]");
+            return;
+        }
         System.out.print("[");
         while (listNode.next != null) {
             System.out.print(listNode.val + " ");
