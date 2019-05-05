@@ -7,7 +7,7 @@ package question;
 public class Question_27_removeElement {
 
     public static void main(String[] args) {
-        int[] a = new int[]{2,2,3};
+        int[] a = new int[]{0,1,2,2,3,0,4,2};
         System.out.println(removeElement(a, 2));
         for (int i = 0; i < a.length; i++) {
             System.out.print(a[i] + " ");
