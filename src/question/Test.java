@@ -1,6 +1,7 @@
 package question;
 
 import java.util.HashMap;
+import java.util.Scanner;
 
 /**
  * @author liupeidong
@@ -8,9 +9,9 @@ import java.util.HashMap;
  */
 public class Test {
 
-    public static int[] longs = new int[50];
 
     public static void main(String[] args) {
+
     }
 
 }

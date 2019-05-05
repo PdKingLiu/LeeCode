@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="62984f93-15a8-4829-9ed4-ed14cf1615b9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeeCode/question/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeeCode/question/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/question/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/question/Test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,7 +17,29 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/question/Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/question/Question_27_removeElement.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="656">
+              <caret line="41" column="13" lean-forward="true" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -67,19 +91,19 @@
         <option value="$PROJECT_DIR$/src/common/Stack2.java" />
         <option value="$PROJECT_DIR$/src/question/Question_20_isValid.java" />
         <option value="$PROJECT_DIR$/src/question/Question_16_threeSumClosest.java" />
-        <option value="$PROJECT_DIR$/src/question/Test.java" />
         <option value="$PROJECT_DIR$/src/question/Question_23_mergeKLists.java" />
         <option value="$PROJECT_DIR$/src/question/Question_21_mergeTwoLists.java" />
         <option value="$PROJECT_DIR$/src/question/Question_24_swapPairs.java" />
         <option value="$PROJECT_DIR$/src/question/Question_22_generateParenthesis.java" />
+        <option value="$PROJECT_DIR$/src/question/Test.java" />
+        <option value="$PROJECT_DIR$/src/question/Question_27_removeElement.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="625" />
-    <option name="y" value="45" />
-    <option name="width" value="1210" />
-    <option name="height" value="990" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-8" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -89,7 +113,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -167,6 +190,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -189,20 +213,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Question_22_generateParenthesis">
-    <configuration name="Question_20_isValid" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="question.Question_20_isValid" />
-      <module name="LeeCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="question.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Question_27_removeElement">
     <configuration name="Question_21_mergeTwoLists" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="question.Question_21_mergeTwoLists" />
       <module name="LeeCode" />
@@ -242,6 +253,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Question_27_removeElement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="question.Question_27_removeElement" />
+      <module name="LeeCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="question.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="question.Test" />
       <module name="LeeCode" />
@@ -257,11 +281,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Question_27_removeElement" />
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.Question_22_generateParenthesis" />
         <item itemvalue="Application.Question_24_swapPairs" />
         <item itemvalue="Application.Question_21_mergeTwoLists" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.Question_20_isValid" />
       </list>
     </recent_temporary>
   </component>
@@ -289,8 +313,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24262735" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.51452285" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -299,7 +324,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3654391" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3611898" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -378,17 +403,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
           <caret line="63" column="38" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/JavaJDK/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="2612" column="47" selection-start-line="2612" selection-start-column="47" selection-end-line="2612" selection-end-column="47" />
-          <folding>
-            <element signature="e#81222#81223#0" expanded="true" />
-            <element signature="e#81271#81272#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -674,13 +688,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/question/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/question/Question_21_mergeTwoLists.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="370">
@@ -739,6 +746,34 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/JavaJDK/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="2080" column="5" lean-forward="true" selection-start-line="2080" selection-start-column="5" selection-end-line="2080" selection-end-column="5" />
+          <folding>
+            <element signature="e#81222#81223#0" expanded="true" />
+            <element signature="e#81271#81272#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/question/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/question/Question_27_removeElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="41" column="13" lean-forward="true" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
         </state>
       </provider>
     </entry>
