@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="62984f93-15a8-4829-9ed4-ed14cf1615b9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeeCode/question/Question_28_strStr.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeeCode/question/Question_28_strStr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeeCode/question/Question_30_findSubstring.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeeCode/question/Question_30_findSubstring.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,11 +29,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/question/Question_30_findSubstring.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+            <state relative-caret-position="44">
+              <caret line="14" column="45" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/question/Question_31_nextPermutation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="557">
+              <caret line="47" column="42" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,13 +133,15 @@
         <option value="$PROJECT_DIR$/src/question/Question_28_strStr.java" />
         <option value="$PROJECT_DIR$/src/question/Question_29_divide.java" />
         <option value="$PROJECT_DIR$/src/question/Question_30_findSubstring.java" />
+        <option value="$PROJECT_DIR$/src/question/Question_31_nextPermutation.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="532" />
+    <option name="y" value="62" />
     <option name="width" value="978" />
-    <option name="height" value="1039" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -237,20 +251,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Question_30_findSubstring">
-    <configuration name="Question_22_generateParenthesis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="question.Question_22_generateParenthesis" />
-      <module name="LeeCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="question.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Question_31_nextPermutation">
     <configuration name="Question_27_removeElement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="question.Question_27_removeElement" />
       <module name="LeeCode" />
@@ -290,6 +291,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Question_31_nextPermutation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="question.Question_31_nextPermutation" />
+      <module name="LeeCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="question.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="question.Test" />
       <module name="LeeCode" />
@@ -305,11 +319,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Question_31_nextPermutation" />
         <item itemvalue="Application.Question_30_findSubstring" />
         <item itemvalue="Application.Question_28_strStr" />
         <item itemvalue="Application.Question_27_removeElement" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.Question_22_generateParenthesis" />
       </list>
     </recent_temporary>
   </component>
@@ -369,13 +383,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/JavaJDK/Java/jdk-10.0.1/lib/src.zip!/java.base/java/math/BigInteger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="124" column="3" selection-start-line="124" selection-start-column="3" selection-end-line="124" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/JavaJDK/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-434">
@@ -786,13 +793,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/JavaJDK/Java/jdk-10.0.1/lib/src.zip!/java.base/java/util/Arrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="1382" column="7" lean-forward="true" selection-start-line="1382" selection-start-column="7" selection-end-line="1382" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/JavaJDK/Java/jdk-10.0.1/lib/src.zip!/java.base/java/util/Collections.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
@@ -813,8 +813,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/question/Question_30_findSubstring.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+        <state relative-caret-position="44">
+          <caret line="14" column="45" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/JavaJDK/Java/jdk-10.0.1/lib/src.zip!/java.base/java/util/Arrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="167" column="7" lean-forward="true" selection-start-line="167" selection-start-column="7" selection-end-line="167" selection-end-column="7" />
+          <folding>
+            <element signature="e#5076#5077#0" expanded="true" />
+            <element signature="e#5147#5148#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/question/Question_31_nextPermutation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="47" column="42" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
