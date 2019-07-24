@@ -9,7 +9,7 @@ import java.util.List;
  * @author liupeidong
  * Created on 2019/4/15 13:06
  */
-public class Question_10_ThreeSum {
+public class Question_15_ThreeSum {
     public static void main(String[] args) {
         System.out.println(threeSum(new int[]{0, 0, 0}));
     }

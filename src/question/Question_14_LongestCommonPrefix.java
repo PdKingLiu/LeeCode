@@ -4,7 +4,7 @@ package question;
  * @author liupeidong
  * Created on 2019/4/15 11:39
  */
-public class Question_10_LongestCommonPrefix {
+public class Question_14_LongestCommonPrefix {
     public static void main(String[] args) {
         System.out.println(longestCommonPrefix(new String[]{"c", "c"}));
     }
