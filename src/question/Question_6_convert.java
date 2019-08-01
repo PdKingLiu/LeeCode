@@ -52,4 +52,42 @@ public class Question_6_convert {
         return stringBuilder.toString();
     }
 
+    public String convertOptimize(String s, int numRows) {
+        if (numRows == 1 || s.length() == 1) {
+            return s;
+        }
+        StringBuilder stringBuilder = new StringBuilder();
+        for (int i = 0; i < numRows; i++) {
+            int index;
+            if (i == 0) {
+                index = 0;
+                while (index < s.length()) {
+                    stringBuilder.append(s.charAt(index));
+                    index += (numRows * 2 - 2);
+                }
+
+            } else if (i == numRows - 1) {
+                index = numRows - 1;
+                while (index < s.length()) {
+                    stringBuilder.append(s.charAt(index));
+                    index += (numRows * 2 - 2);
+                }
+            } else if (numRows != 2) {
+                index = i;
+                int count = 1;
+                while (index < s.length()) {
+                    stringBuilder.append(s.charAt(index));
+                    if (count % 2 == 1) {
+                        index += (numRows * 2 - 2) - i * 2;
+                    } else {
+                        index += i * 2;
+                    }
+                    count++;
+                }
+            }
+
+        }
+        return stringBuilder.toString();
+    }
+
 }
