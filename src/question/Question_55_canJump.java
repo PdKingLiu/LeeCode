@@ -28,8 +28,8 @@ public class Question_55_canJump {
     private boolean isFind = false;
 
     /*
-    * 回溯法
-    * */
+     * 回溯法
+     * */
     public boolean canJump(int[] nums) {
         backtrack(nums, 0, 0);
         return isFind;
@@ -97,6 +97,22 @@ public class Question_55_canJump {
             }
         }
         return can[nums.length - 1];
+    }
+
+    /*
+     * 贪心
+     * */
+    public boolean canJump4(int[] nums) {
+        int now = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (i > now) {
+                return false;
+            }
+            if (nums[i] + i >= now) {
+                now = i + nums[i];
+            }
+        }
+        return true;
     }
 
 }
