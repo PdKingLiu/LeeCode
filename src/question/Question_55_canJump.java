@@ -25,9 +25,11 @@ public class Question_55_canJump {
         输出: false
         解释: 无论怎样，你总会到达索引为 3 的位置。但该位置的最大跳跃长度是 0 ， 所以你永远不可能到达最后一个位置。 */
 
-
     private boolean isFind = false;
 
+    /*
+    * 回溯法
+    * */
     public boolean canJump(int[] nums) {
         backtrack(nums, 0, 0);
         return isFind;
@@ -41,14 +43,60 @@ public class Question_55_canJump {
             isFind = true;
             return;
         }
-
-        for (int i = 1; n <= nums.length - 2 && i <= nums[n]; i++) {
-            if (integer + i > nums.length - 1) {
-                continue;
+        if (n <= nums.length - 2) {
+            for (int i = nums[n]; i >= 1; i--) {
+                if (integer + i > nums.length - 1) {
+                    continue;
+                }
+                integer += i;
+                backtrack(nums, n + i, integer);
+                integer -= i;
             }
-            integer += i;
-            backtrack(nums, n + i, integer);
-            integer -= i;
         }
     }
+
+    /*
+     * 动态规划空间复杂度 O（1）
+     * */
+    public boolean canJump2(int[] nums) {
+        if (nums.length == 1) {
+            return true;
+        }
+        boolean now = false;
+        for (int i = 1; i < nums.length; i++) {
+            now = false;
+            for (int j = 0; j < i; j++) {
+                if (j + nums[j] >= i) {
+                    now = true;
+                    break;
+                }
+            }
+            if (!now) {
+                break;
+            }
+        }
+        return now;
+    }
+
+
+    /*
+     * 动态规划空间复杂度 O（N）
+     * */
+    public boolean canJump3(int[] nums) {
+        boolean[] can = new boolean[nums.length];
+        can[0] = true;
+        for (int i = 1; i < nums.length; i++) {
+            for (int j = 0; j < i; j++) {
+                if (can[j] && j + nums[j] >= i) {
+                    can[i] = true;
+                    break;
+                }
+            }
+            if (!can[i]) {
+                break;
+            }
+        }
+        return can[nums.length - 1];
+    }
+
 }
