@@ -1,6 +1,7 @@
 package question;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
@@ -56,6 +57,26 @@ public class Question_49_groupAnagrams {
             map.put(string.charAt(i), map.getOrDefault(string.charAt(i), 0) + 1);
         }
         return map;
+    }
+
+    public List<List<String>> groupAnagrams2(String[] strs) {
+        HashMap<String, List<String>> map = new HashMap<>();
+        List<List<String>> listList = new ArrayList<>();
+        for (int i = 0; i < strs.length; i++) {
+            char[] chars = strs[i].toCharArray();
+            Arrays.sort(chars);
+            String string = Arrays.toString(chars);
+            if (map.containsKey(string)) {
+                List<String> list = map.get(string);
+                list.add(strs[i]);
+            } else {
+                List<String> list = new ArrayList<>();
+                list.add(strs[i]);
+                listList.add(list);
+                map.put(string, list);
+            }
+        }
+        return listList;
     }
 
 }
