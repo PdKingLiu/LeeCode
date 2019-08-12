@@ -5,9 +5,6 @@ package competition_of_leecode;
  * Created on 2019/8/4 10:19
  */
 public class MovesToMakeZigzag_5147 {
-    public static void main(String[] args) {
-        System.out.println(new MovesToMakeZigzag_5147().movesToMakeZigzag(new int[]{1, 2, 3}));
-    }
 
     public int movesToMakeZigzag(int[] nums) {
         if (nums.length == 0 || nums.length == 1 || nums.length == 2) {

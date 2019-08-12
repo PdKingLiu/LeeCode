@@ -6,7 +6,6 @@ package competition_of_leecode;
  */
 public class numRollsToTarget_1155 {
 
-
     /*这里有 d 个一样的骰子，每个骰子上都有 f 个面，分别标号为 1, 2, ..., f。
 
         我们约定：掷骰子的得到总点数为各骰子面朝上的数字的总和。
