@@ -8,12 +8,6 @@ import common.ListNode;
  */
 public class Question_21_mergeTwoLists {
 
-    public static void main(String[] args) {
-        ListNode listNode = ListNode.setList(new int[]{1, 3, 5, 6, 7});
-        ListNode listNode2 = ListNode.setList(new int[]{2, 4, 5, 6, 9});
-        ListNode.showList(mergeTwoLists(listNode, listNode2));
-    }
-
     public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         if (l1 == null) {
             return l2;

@@ -36,10 +36,7 @@ public class Question_65_isNumber {
     public boolean isNumber(String s) {
         try {
             Double.parseDouble(s);
-            if (Character.isAlphabetic(s.charAt(s.length() - 1))) {
-                return false;
-            }
-            return true;
+            return !Character.isAlphabetic(s.charAt(s.length() - 1));
         } catch (Exception e) {
             return false;
         }

@@ -8,14 +8,6 @@ import common.ListNode;
  */
 public class Question_23_mergeKLists {
 
-    public static void main(String[] args) {
-        ListNode listNode = ListNode.setList(new int[]{1, 2, 3, 4, 5});
-        ListNode listNode2 = ListNode.setList(new int[]{1, 2, 3, 4, 5});
-        ListNode listNode3 = ListNode.setList(new int[]{5, 5, 6, 8, 13});
-        ListNode listNode4 = ListNode.setList(new int[]{6, 7, 9, 10, 12});
-        ListNode.showList(mergeKLists(new ListNode[]{}));
-    }
-
     public static ListNode mergeKLists(ListNode[] lists) {
         if (lists == null || lists.length == 0) {
             return null;

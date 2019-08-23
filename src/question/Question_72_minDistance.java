@@ -34,7 +34,7 @@ public class Question_72_minDistance {
 
     /* 动态规划 */
     public static int minDistance(String word1, String word2) {
-        int dp[][] = new int[word1.length() + 1][word2.length() + 1];
+        int[][] dp = new int[word1.length() + 1][word2.length() + 1];
         for (int i = 0; i <= word2.length(); i++) {
             dp[0][i] = i;
         }

@@ -11,12 +11,6 @@ import java.util.ArrayList;
  */
 public class Question_2_AddTwoNumber {
 
-    public static void main(String[] args) {
-        ListNode l1 = setUp(new BigInteger("465"));
-        ListNode l2 = setUp(new BigInteger("1000000000000000000000000000001"));
-        show(addTwoNumbers(l1, l2));
-    }
-
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         BigInteger a = reversal(l1);
         BigInteger a2 = reversal(l2);
@@ -41,7 +35,6 @@ public class Question_2_AddTwoNumber {
     }
 
     public static BigInteger reversal(ListNode listNode) {
-        long count = 0;
         ListNode tem;
         tem = listNode;
         ArrayList<Integer> list = new ArrayList<>();
@@ -51,14 +44,12 @@ public class Question_2_AddTwoNumber {
         if (listNode.next == null) {
             return new BigInteger(listNode.val + "");
         } else {
-            count++;
             list.add(tem.val);
             while (tem.next != null) {
                 tem = tem.next;
-                count++;
                 list.add(tem.val);
             }
-            StringBuffer stringBuffer = new StringBuffer();
+            StringBuilder stringBuffer = new StringBuilder();
             for (int i = list.size() - 1; i >= 0; i--) {
                 int a = list.get(i);
                 stringBuffer.append(a);
@@ -67,11 +58,4 @@ public class Question_2_AddTwoNumber {
         }
     }
 
-    public static void show(ListNode listNode) {
-        while (listNode.next != null) {
-            System.out.print(listNode.val + " ");
-            listNode = listNode.next;
-        }
-        System.out.print(listNode.val + " ");
-    }
 }

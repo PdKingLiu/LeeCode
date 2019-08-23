@@ -8,9 +8,6 @@ import java.util.List;
  * Created on 2019/4/28 17:15
  */
 public class Question_22_generateParenthesis {
-    public static void main(String[] args) {
-        System.out.println(generateParenthesis(3));
-    }
 
     public static List<String> generateParenthesis(int n) {
         List<String> list = new ArrayList<>();

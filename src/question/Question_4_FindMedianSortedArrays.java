@@ -1,6 +1,5 @@
 package question;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
@@ -9,12 +8,8 @@ import java.util.Arrays;
  */
 public class Question_4_FindMedianSortedArrays {
 
-    public static void main(String[] args) {
-        System.out.println(findMedianSortedArrays(new int[]{1, 2}, new int[]{3}));
-    }
-
     public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
-        int a[] = new int[nums1.length + nums2.length];
+        int[] a = new int[nums1.length + nums2.length];
         for (int i = 0; i < nums1.length; i++) {
             a[i] = nums1[i];
         }

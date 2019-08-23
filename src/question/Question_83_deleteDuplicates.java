@@ -1,5 +1,7 @@
 package question;
 
+import common.ListNode;
+
 /**
  * @author liupeidong
  * Created on 2019/8/18 23:14
@@ -16,15 +18,6 @@ public class Question_83_deleteDuplicates {
 
         输入: 1->1->2->3->3
         输出: 1->2->3 */
-
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
 
     public static ListNode deleteDuplicates(ListNode head) {
         if (head == null || head.next == null) {

@@ -6,13 +6,6 @@ package question;
  */
 public class Question_1_TwoNumberSum {
 
-    public static void main(String[] args) {
-        int[] a = twoSum(new int[]{2, 7, 11, 15}, 9);
-        for (Integer i :a) {
-            System.out.println(i);
-        }
-    }
-
     public static int[] twoSum(int[] nums, int target) {
         int a = -1, b = -1;
         boolean flag = false;

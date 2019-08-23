@@ -1,5 +1,7 @@
 package question;
 
+import common.TreeNode;
+
 import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
@@ -10,16 +12,6 @@ import java.util.List;
  */
 
 public class Question_94_inorderTraversal {
-
-    class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
-    }
 
     List<Integer> list = new LinkedList<>();
 

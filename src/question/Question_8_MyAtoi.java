@@ -5,9 +5,6 @@ package question;
  * Created on 2019/4/14 22:07
  */
 public class Question_8_MyAtoi {
-    public static void main(String[] args) {
-        System.out.println(myAtoi("    -88827   5655  U"));
-    }
 
     public static int myAtoi(String str) {
         if (str == null || str.equals("") || str.trim().equals("")) {
@@ -32,7 +29,7 @@ public class Question_8_MyAtoi {
         if (start == str.length()) {
             return 0;
         }
-        StringBuffer stringBuffer = new StringBuffer();
+        StringBuilder stringBuffer = new StringBuilder();
         if (Character.isDigit(str.charAt(start))) {
             for (int i = start; i < str.length(); i++) {
                 if (Character.isDigit(str.charAt(i))) {

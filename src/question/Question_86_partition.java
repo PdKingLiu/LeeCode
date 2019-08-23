@@ -1,5 +1,7 @@
 package question;
 
+import common.ListNode;
+
 /**
  * @author liupeidong
  * Created on 2019/8/20 15:34
@@ -14,15 +16,6 @@ public class Question_86_partition {
 
         输入: head = 1->4->3->2->5->2, x = 3
         输出: 1->2->2->4->3->5 */
-
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
 
     public ListNode partition(ListNode head, int x) {
         if (head == null || head.next == null) {

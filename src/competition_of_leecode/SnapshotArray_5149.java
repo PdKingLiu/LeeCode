@@ -1,12 +1,24 @@
 package competition_of_leecode;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
 
 /**
  * @author liupeidong
  * Created on 2019/8/4 11:08
  */
 class SnapshotArray_5149 {
+
+    int[] arr;
+    HashMap<Integer, HashMap<Integer, Integer>> map;
+    int snap_id = 0;
+
+    public SnapshotArray_5149(int length) {
+        arr = new int[length];
+        map = new HashMap<>();
+    }
 
     private static void fun(String string, int i, int[] anInt, SnapshotArray_5149 snapshotArray) {
         System.out.print("i:" + i + "-");
@@ -21,17 +33,6 @@ class SnapshotArray_5149 {
                 System.out.print(snapshotArray.snap() + " ");
                 break;
         }
-    }
-
-    int[] arr;
-
-    HashMap<Integer, HashMap<Integer, Integer>> map;
-
-    int snap_id = 0;
-
-    public SnapshotArray_5149(int length) {
-        arr = new int[length];
-        map = new HashMap<>();
     }
 
     public String set(int index, int val) {

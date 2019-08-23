@@ -1,20 +1,12 @@
 package question;
 
 import java.util.Arrays;
-import java.util.Comparator;
 
 /**
  * @author liupeidong
  * Created on 2019/5/6 18:58
  */
 public class Question_31_nextPermutation {
-    public static void main(String[] args) {
-        int[] nums = {1,2,3};
-        nextPermutation(nums);
-        for (int i = 0; i < nums.length; i++) {
-            System.out.print(nums[i] + " ");
-        }
-    }
 
     public static void nextPermutation(int[] nums) {
         if (nums.length == 0 || nums.length == 1) {
@@ -44,8 +36,8 @@ public class Question_31_nextPermutation {
                 index = i;
             }
         }
-        swap(nums, l-1, index);
-        Arrays.sort(nums, l, nums.length) ;
+        swap(nums, l - 1, index);
+        Arrays.sort(nums, l, nums.length);
 
     }
 

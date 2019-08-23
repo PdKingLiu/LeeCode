@@ -5,10 +5,6 @@ package question;
  * Created on 2019/4/15 10:45
  */
 public class Question_11_MaxArea {
-    public static void main(String[] args) {
-        System.out.println(maxArea(new int[]{1, 8, 6, 2, 5, 4, 8, 3, 7}));
-        System.out.println(maxAreaVioLence(new int[]{1, 8, 6, 2, 5, 4, 8, 3, 7}));
-    }
 
     public static int maxArea(int[] height) {
         int maxArea = 0;

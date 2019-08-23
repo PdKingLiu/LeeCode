@@ -5,9 +5,6 @@ package question;
  * Created on 2019/4/18 22:42
  */
 public class Question_26_RemoveDuplicates {
-    public static void main(String[] args) {
-        System.out.println(removeDuplicates(new int[]{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}));
-    }
 
     public static int removeDuplicates(int[] nums) {
         if (nums == null) {

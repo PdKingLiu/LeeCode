@@ -10,7 +10,6 @@ import java.util.List;
  */
 public class Question_60_getPermutation {
 
-
     /*给出集合 [1,2,3,…,n]，其所有元素共有 n! 种排列。
 
         按大小顺序列出所有排列情况，并一一标记，当 n = 3 时, 所有排列如下：
@@ -34,6 +33,14 @@ public class Question_60_getPermutation {
 
 
     /*线性遍历*/
+
+    List<String> list = new LinkedList<>();
+    StringBuilder stringBuilder = new StringBuilder();
+
+
+    /*回溯超时*/
+    boolean[] isUsed;
+    boolean isFind = false;
 
     public String getPermutation2(int n, int k) {
         List<Integer> list = new ArrayList<>(n);
@@ -76,14 +83,6 @@ public class Question_60_getPermutation {
             j[i] = j[i - 1] * i;
         }
     }
-
-
-    /*回溯超时*/
-
-    List<String> list = new LinkedList<>();
-    StringBuilder stringBuilder = new StringBuilder();
-    boolean[] isUsed;
-    boolean isFind = false;
 
     public String getPermutation(int n, int k) {
         isUsed = new boolean[n];

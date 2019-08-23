@@ -1,5 +1,7 @@
 package question;
 
+import common.ListNode;
+
 /**
  * @author liupeidong
  * Created on 2019/8/9 8:41
@@ -18,6 +20,7 @@ public class Question_61_rotateRight {
 
     ListNode front, end;
     int len = 1, lenTem = 1;
+
     public ListNode rotateRight(ListNode head, int k) {
         if (head == null || head.next == null) {
             return head;
@@ -61,21 +64,4 @@ public class Question_61_rotateRight {
     }
 
 
-}
-
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-        val = x;
-    }
-
-    @Override
-    public String toString() {
-        return "ListNode{" +
-                "val=" + val +
-                ", next=" + next +
-                '}';
-    }
 }

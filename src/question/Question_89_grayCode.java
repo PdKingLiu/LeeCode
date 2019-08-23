@@ -38,6 +38,12 @@ public class Question_89_grayCode {
              给定编码总位数为 n 的格雷编码序列，其长度为 2n。当 n = 0 时，长度为 20 = 1。
              因此，当 n = 0 时，其格雷编码序列为 [0]。 */
 
+    List<Integer> list;
+
+    /*真是个弟弟 真用回溯做了*/
+    int value = 0;
+    boolean isFind = false;
+
     /* 一个非常骚的位运算 */
     public List<Integer> grayCode2(int n) {
         list = new ArrayList<>(1 << n);
@@ -46,12 +52,6 @@ public class Question_89_grayCode {
         }
         return list;
     }
-
-    /*真是个弟弟 真用回溯做了*/
-
-    List<Integer> list;
-    int value = 0;
-    boolean isFind = false;
 
     public List<Integer> grayCode(int n) {
         list = new ArrayList<>((int) Math.pow(2, n));

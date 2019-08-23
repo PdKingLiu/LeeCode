@@ -9,11 +9,6 @@ import java.util.HashSet;
  */
 public class Question_3_LengthOfLongestSubstring {
 
-    public static void main(String[] args) {
-        System.out.println(lengthOfLongestSubstring("abcabcbb"));
-        System.out.println(lengthOfLongestSubstring2("abcabcbb"));
-    }
-
     public static int lengthOfLongestSubstring(String s) {
         int res = 0;
         int end, start = 0;
@@ -23,7 +18,7 @@ public class Question_3_LengthOfLongestSubstring {
             if (map.containsKey(s.charAt(end))) {
                 start = Math.max(map.get(s.charAt(end)), start);
             }
-            map.put(s.charAt(end),end + 1);
+            map.put(s.charAt(end), end + 1);
             res = Math.max(res, end - start + 1);
         }
         return res;

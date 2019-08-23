@@ -1,12 +1,11 @@
 package common;
 
-import java.math.BigInteger;
-
 /**
  * @author liupeidong
  * Created on 2019/4/19 11:39
  */
 public class ListNode {
+
     public int val;
     public ListNode next;
 
@@ -14,36 +13,25 @@ public class ListNode {
         val = x;
     }
 
-    public ListNode() {
+    public ListNode(int[] xs) {
+        this.val = xs[0];
+        ListNode tem = this;
+        for (int i = 1; i < xs.length; i++) {
+            tem.next = new ListNode(xs[i]);
+            tem = tem.next;
+        }
     }
 
-    public static ListNode setList(int[] a) {
-        if (a == null || a.length == 0) {
-            return null;
-        }
-        ListNode listNode;
-        ListNode tem;
-        listNode = new ListNode(a[0]);
-        listNode.next = null;
-        tem = listNode;
-        for (int i = 1; i < a.length; i++) {
-            listNode.next = new ListNode(a[i]);
-            listNode = listNode.next;
-            listNode.next = null;
-        }
-        return tem;
-    }
 
-    public static void showList(ListNode listNode) {
-        if (listNode == null) {
-            System.out.println("[null]");
-            return;
+    @Override
+    public String toString() {
+        ListNode tem = this;
+        StringBuilder stringBuilder = new StringBuilder("[");
+        while (tem.next != null) {
+            stringBuilder.append(tem.val).append(", ");
+            tem = tem.next;
         }
-        System.out.print("[");
-        while (listNode.next != null) {
-            System.out.print(listNode.val + " ");
-            listNode = listNode.next;
-        }
-        System.out.println(listNode.val + "]");
+        stringBuilder.append(tem.val).append("]");
+        return stringBuilder.toString();
     }
 }

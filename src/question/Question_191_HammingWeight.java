@@ -5,9 +5,7 @@ package question;
  * Created on 2019/4/21 22:38
  */
 public class Question_191_HammingWeight {
-    public static void main(String[] args) {
-        System.out.println(hammingWeight(0b00000000000000000100000000001));
-    }
+
     public static int hammingWeight(int n) {
         int count = 0;
         while (n != 0) {

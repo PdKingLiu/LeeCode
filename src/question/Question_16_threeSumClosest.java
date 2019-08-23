@@ -7,9 +7,6 @@ import java.util.Arrays;
  * Created on 2019/4/22 10:25
  */
 public class Question_16_threeSumClosest {
-    public static void main(String[] args) {
-        System.out.println(threeSumClosest(new int[]{1, 1, 1, 1}, 0));
-    }
 
     public static int threeSumClosest(int[] nums, int target) {
         if (nums.length == 3) {

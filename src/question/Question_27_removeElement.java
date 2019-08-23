@@ -6,14 +6,6 @@ package question;
  */
 public class Question_27_removeElement {
 
-    public static void main(String[] args) {
-        int[] a = new int[]{0,1,2,2,3,0,4,2};
-        System.out.println(removeElement(a, 2));
-        for (int i = 0; i < a.length; i++) {
-            System.out.print(a[i] + " ");
-        }
-    }
-
     public static int removeElement(int[] nums, int val) {
         if (nums == null || nums.length == 0 || nums.length == 1 && nums[0] == val) {
             return 0;

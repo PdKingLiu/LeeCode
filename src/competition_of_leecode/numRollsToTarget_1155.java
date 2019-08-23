@@ -12,6 +12,12 @@ public class numRollsToTarget_1155 {
 
         如果需要掷出的总点数为 target，请你计算出有多少种不同的组合情况（所有的组合情况总共有 f^d 种），模 10^9 + 7 后返回。*/
 
+    int now = 0;
+
+
+    /*回溯*/
+    int count = 0;
+
     public int numRollsToTarget2(int d, int f, int target) {
         if (target > f * d) {
             return 0;
@@ -32,12 +38,6 @@ public class numRollsToTarget_1155 {
         }
         return dp[d][target];
     }
-
-
-    /*回溯*/
-
-    int now = 0;
-    int count = 0;
 
     public int numRollsToTarget(int d, int f, int target) {
         backtrack(0, d, f, target);

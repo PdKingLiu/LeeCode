@@ -17,6 +17,7 @@ public class Question_50_myPow {
             return n > 0 ? result : 1 / result;
         }
     }
+
     private double Pow(double x, int n) {
         if (n == 1) {
             return x;

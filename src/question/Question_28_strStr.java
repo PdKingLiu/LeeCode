@@ -6,10 +6,6 @@ package question;
  */
 public class Question_28_strStr {
 
-    public static void main(String[] args) {
-        System.out.println(strStr("mississippi", "pi"));
-    }
-
     public static int strStr(String haystack, String needle) {
         if (haystack.length() < needle.length()) {
             return -1;

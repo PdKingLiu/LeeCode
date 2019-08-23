@@ -1,7 +1,6 @@
 package question;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -19,16 +18,12 @@ public class Question_17_LetterCombinations {
             {'t', 'u', 'v'},
             {'w', 'x', 'y', 'z'}};
 
-    public static void main(String[] args) {
-        System.out.println(letterCombinations("23"));
-    }
-
     public static List<String> letterCombinations(String digits) {
         List<String> list = new ArrayList<>();
         if (digits == null || digits.equals("")) {
             return list;
         }
-        char digitChar[] = digits.toCharArray();
+        char[] digitChar = digits.toCharArray();
         for (char c : digitChar) {
             char[] c1 = ch[c - 50];
             getStrings(list, c1);
@@ -46,7 +41,7 @@ public class Question_17_LetterCombinations {
         }
         list1 = new ArrayList();
         for (String string : list) {
-            for (char c:chars) {
+            for (char c : chars) {
                 list1.add(string + c);
             }
         }

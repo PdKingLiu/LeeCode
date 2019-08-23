@@ -6,10 +6,6 @@ package question;
  */
 public class Question_7_IntReversal {
 
-    public static void main(String[] args) {
-        System.out.println(reverse(1534236469));
-    }
-
     public static int reverse(int x) {
         String num = String.valueOf(x);
         StringBuilder center = new StringBuilder();
