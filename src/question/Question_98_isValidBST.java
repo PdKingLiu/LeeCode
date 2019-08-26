@@ -73,4 +73,28 @@ public class Question_98_isValidBST {
         return thisValid[0] && thisValid[1] && (DFS(now.left, now.val, lower) && DFS(now.right, upper, now.val));
     }
 
+    /*中序遍历*/
+
+    Integer front;
+    boolean isTrue2 = true;
+
+    public boolean isValidBST2(TreeNode root) {
+        if (root == null) {
+            return true;
+        }
+        if (!isTrue2) {
+            return false;
+        }
+        isValidBST2(root.left);
+        if (front != null) {
+            if (front >= root.val) {
+                isTrue2 = false;
+                return false;
+            }
+        }
+        front = root.val;
+        isValidBST2(root.right);
+        return isTrue2;
+    }
+
 }
