@@ -24,12 +24,26 @@ public class TreeNode {
         int count = 1;
         while (count < values.length) {
             TreeNode treeNode;
-            for (int i = 0; i < queue.size(); i++) {
-                treeNode = queue.poll();
+            int size = queue.size();
+            for (int i = 0; i < size; i++) {
+                treeNode = queue.peek();
+                if (treeNode == null) {
+                    queue.add(null);
+                    queue.add(null);
+                    count += 2;
+                    queue.poll();
+                    if (count >= values.length) {
+                        break;
+                    } else {
+                        continue;
+                    }
+                }
+                queue.poll();
                 if (values[count] != null) {
                     treeNode.left = new TreeNode(values[count++]);
                     queue.add(treeNode.left);
-                }else{
+                } else {
+                    queue.add(null);
                     count++;
                 }
                 if (count == values.length) {
@@ -38,7 +52,8 @@ public class TreeNode {
                 if (values[count] != null) {
                     treeNode.right = new TreeNode(values[count++]);
                     queue.add(treeNode.right);
-                }else{
+                } else {
+                    queue.add(null);
                     count++;
                 }
                 if (count == values.length) {
@@ -50,10 +65,10 @@ public class TreeNode {
 
     @Override
     public String toString() {
-        return "TreeNode{" +
+        return "{" +
                 "val=" + val +
-                ", left=" + left +
-                ", right=" + right +
+                ", l=" + left +
+                ", r=" + right +
                 '}';
     }
 }
