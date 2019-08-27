@@ -106,4 +106,44 @@ public class Question_99_recoverTree {
         DFS2(root.right, arr);
     }
 
+    /*  空间复杂度O（1）*/
+
+    TreeNode f = null, upper = null, lower = null;
+    boolean[] isFind = {false, false};
+
+    public void recoverTree2(TreeNode root) {
+        if (root == null) {
+            return;
+        }
+        DFS3(root);
+        int tem = upper.val;
+        upper.val = lower.val;
+        lower.val = tem;
+    }
+
+    private void DFS3(TreeNode root) {
+        if (root == null) {
+            return;
+        }
+        if (isFind[0] && isFind[1]) {
+            return;
+        }
+        DFS3(root.left);
+        if (f != null) {
+            if (f.val > root.val) {
+                if (upper == null) {
+                    upper = f;
+                    lower = root;
+                    isFind[0] = true;
+                } else {
+                    lower = root;
+                    isFind[1] = true;
+                    return;
+                }
+            }
+        }
+        f = root;
+        DFS3(root.right);
+    }
+
 }
