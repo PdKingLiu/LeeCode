@@ -56,4 +56,25 @@ public class Question_114_flatten {
         getList(root.right);
     }
 
+    public void flatten2(TreeNode root) {
+        if (root == null) {
+            return;
+        }
+        TreeNode rightTem;
+        while (root != null) {
+            if (root.left != null) {
+                rightTem = root.right;
+                root.right = root.left;
+                root.left = null;
+                if (rightTem != null) {
+                    TreeNode rightBottom = root.right;
+                    while (rightBottom.right != null) {
+                        rightBottom = rightBottom.right;
+                    }
+                    rightBottom.right = rightTem;
+                }
+            }
+            root = root.right;
+        }
+    }
 }
