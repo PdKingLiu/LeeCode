@@ -2,6 +2,8 @@ package question;
 
 import common.TreeNode;
 
+import java.util.HashMap;
+
 /**
  * @author liupeidong
  * Created on 2019/9/1 9:42
@@ -25,15 +27,16 @@ public class Question_105_buildTree {
             /  \
            15   7 */
 
+    HashMap<Integer, Integer> map;
+
     public TreeNode buildTree(int[] preorder, int[] inorder) {
         if (preorder.length == 0 || inorder.length == 0) {
             return null;
         }
-        int index = getIndex(inorder, preorder[0], 0, inorder.length - 1);
-        TreeNode root = new TreeNode(preorder[0]);
-        root.left = create(preorder, inorder, 1, index + 1, 0, index);
-        root.right = create(preorder, inorder, index + 1, preorder.length, index + 1, inorder.length);
-        return root;
+        setIndex(inorder);
+        TreeNode root = new TreeNode(-1);
+        root.right = create(preorder, inorder, 0, preorder.length, 0, inorder.length);
+        return root.right;
     }
 
     private TreeNode create(int[] preorder, int[] inorder, int pstart, int pend, int istart, int iend) {
@@ -41,18 +44,17 @@ public class Question_105_buildTree {
             return null;
         }
         TreeNode root = new TreeNode(preorder[pstart]);
-        int index = getIndex(inorder, preorder[pstart], istart, iend - 1);
+        int index = map.get(preorder[pstart]);
         root.left = create(preorder, inorder, pstart + 1, pstart + 1 + index - istart, istart, index);
         root.right = create(preorder, inorder, pstart + 1 + index - istart, pend, index + 1, iend);
         return root;
     }
 
-    public int getIndex(int[] nums, int n, int start, int end) {
-        for (int i = start; i <= end; i++) {
-            if (nums[i] == n) {
-                return i;
-            }
+    private void setIndex(int[] inorder) {
+        map = new HashMap<>(inorder.length);
+        for (int i = 0; i < inorder.length; i++) {
+            map.put(inorder[i], i);
         }
-        return -1;
     }
+
 }
