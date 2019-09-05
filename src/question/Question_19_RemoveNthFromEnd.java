@@ -39,7 +39,7 @@ public class Question_19_RemoveNthFromEnd {
         }
     }
 
-    static class List {
+    private static class List {
         boolean flag = false;
         ListNode listNode;
     }
