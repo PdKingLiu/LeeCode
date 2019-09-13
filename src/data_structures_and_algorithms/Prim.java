@@ -8,7 +8,7 @@ public class Prim {
 
     /*图——最小生成树——prim算法*/
 
-    static class Graph {
+    private static class Graph {
         char[] vertex;
         int[][] weight;
     }
@@ -48,9 +48,9 @@ public class Prim {
                 j++;
             }
             lowVast[index] = 0;
-            System.out.print("->" + G.vertex[index] + ":" + min);
+            System.out.println(String.format("(%c,%d)",G.vertex[index], min));
             for (j = 1; j < G.vertex.length; j++) {
-                if (lowVast[i] != 0 && G.weight[index][j] < lowVast[j]) {
+                if (lowVast[j] != 0 && G.weight[index][j] < lowVast[j]) {
                     adjVertex[j] = index;
                     lowVast[j] = G.weight[index][j];
                 }
