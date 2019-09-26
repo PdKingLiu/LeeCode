@@ -43,8 +43,9 @@ public class Question_126_findLadders {
         解释: endWord "cog" 不在字典中，所以不存在符合要求的转换序列。 */
 
     /*
-    * BFS + DFS超时了。。。
-    * */
+     * BFS + DFS超时了。。。
+     * */
+
 
     public List<List<String>> findLadders(String beginWord, String endWord, List<String> wordList) {
         if (beginWord.equals(endWord)) {
@@ -55,7 +56,7 @@ public class Question_126_findLadders {
             return listList;
         }
         wordList.add(beginWord);
-        HashMap<String, List<String>> hashMap = new HashMap<>(wordList.size());
+        HashMap<String, HashSet<String>> hashMap = new HashMap<>(wordList.size());
         HashMap<String, Boolean> isUsedMap = new HashMap<>(wordList.size());
         getChild(hashMap, isUsedMap, wordList);
         Queue<String> queue = new LinkedList<>();
@@ -66,7 +67,7 @@ public class Question_126_findLadders {
             int size = queue.size();
             for (int i = 0; i < size; i++) {
                 String s = queue.poll();
-                List<String> list = hashMap.get(s);
+                HashSet<String> list = hashMap.get(s);
                 for (String s1 : list) {
                     if (s1.equals(endWord)) {
                         isFind = true;
@@ -85,41 +86,36 @@ public class Question_126_findLadders {
         }
         if (isFind) {
             HashSet<List<String>> set = new HashSet<>(100);
-            List<String> listTem = new ArrayList<>(sum + 10);
-            isUsedMap = new HashMap<>(wordList.size() + 10);
-            listTem.add(beginWord);
-            backtrack(0, sum, isUsedMap, hashMap, set, listTem, beginWord, endWord);
+            ArrayList<String> hashChild = new ArrayList<>(sum + 10);
+            hashChild.add(beginWord);
+            backtrack(0, sum, hashMap, set, hashChild, beginWord, endWord);
             return new ArrayList<>(set);
         } else {
             return new ArrayList<>();
         }
     }
 
-    private void backtrack(int i, int sum, HashMap<String, Boolean> isUsedMap, HashMap<String, List<String>> hashMap, HashSet<List<String>> set, List<String> listTem, String beginWord, String endWord) {
-        if (i + 1 == sum) {
+    private void backtrack(int i, int sum, HashMap<String, HashSet<String>> hashMap, HashSet<List<String>> set, ArrayList<String> hashChild, String beginWord, String endWord) {
+        if (i + 1 >= sum) {
             if (beginWord.equals(endWord)) {
-                set.add(new ArrayList<>(listTem));
+                set.add(new ArrayList<>(hashChild));
             }
             return;
         }
+        System.out.println(i + "_ " + sum);
         for (String ss : hashMap.get(beginWord)) {
-            Boolean b = isUsedMap.get(beginWord);
-            if (b == null || !b) {
-                isUsedMap.put(beginWord, true);
-                listTem.add(ss);
-                backtrack(i + 1, sum, isUsedMap, hashMap, set, listTem, ss, endWord);
-                isUsedMap.put(beginWord, false);
-                listTem.remove(listTem.size() - 1);
-            }
+            hashChild.add(ss);
+            backtrack(i + 1, sum, hashMap, set, hashChild, ss, endWord);
+            hashChild.remove(hashChild.size() - 1);
         }
     }
 
-    private void getChild(HashMap<String, List<String>> hashMap, HashMap<String, Boolean> hashMap2, List<String> wordList) {
+    private void getChild(HashMap<String, HashSet<String>> hashMap, HashMap<String, Boolean> isUsedMap, List<String> wordList) {
         for (int i = 0; i < wordList.size(); i++) {
-            List<String> list = hashMap.get(wordList.get(i));
-            hashMap2.put(wordList.get(i), false);
+            HashSet<String> list = hashMap.get(wordList.get(i));
+            isUsedMap.put(wordList.get(i), false);
             if (list == null) {
-                list = new ArrayList<>(wordList.size());
+                list = new HashSet<>(wordList.size());
                 hashMap.put(wordList.get(i), list);
             }
             for (int j = 0; j < wordList.size(); j++) {
@@ -137,6 +133,66 @@ public class Question_126_findLadders {
                         list.add(wordList.get(j));
                     }
                 }
+            }
+        }
+    }
+
+
+    private HashMap<String, HashSet<String>> hashMap;
+    private HashMap<String, Boolean> isUsedMap;
+    private HashSet<List<String>> result;
+    private HashSet<String> child;
+    private String end;
+    private Integer depth = null;
+
+    public List<List<String>> findLadders2(String beginWord, String endWord, List<String> wordList) {
+        if (beginWord.equals(endWord)) {
+            List<String> list = new ArrayList<>();
+            list.add(beginWord);
+            List<List<String>> listList = new ArrayList<>();
+            listList.add(list);
+            return listList;
+        }
+        wordList.add(beginWord);
+        hashMap = new HashMap<>(wordList.size());
+        isUsedMap = new HashMap<>(wordList.size());
+        getChild(hashMap, isUsedMap, wordList);
+        result = new HashSet<>(1000);
+        child = new HashSet<>(wordList.size() + 10);
+        end = endWord;
+        child.add(beginWord);
+        BFS(0, beginWord);
+        return new ArrayList<>(result);
+    }
+
+    private void BFS(int n, String begin) {
+        if (depth != null && n > depth) {   //超过当前已发现的depth
+            return;
+        }
+        if (begin.equals(end)) {
+            if (depth == null) {
+                result.add(new ArrayList<>(child));
+                depth = n;          //第一次找到
+                return;
+            } else {
+                if (n < depth) {
+                    depth = n;
+                    result.clear();     //找到了更小的
+                    result.add(new ArrayList<>(child));
+                    return;
+                } else if (n == depth) {
+                    result.add(new ArrayList<>(child)); //当前depth的另一个解
+                } else {
+                    return;
+                }
+            }
+        }
+
+        for (String ch : hashMap.get(begin)) {
+            if (!child.contains(ch)) {
+                child.add(ch);
+                BFS(n + 1, ch);
+                child.remove(ch);
             }
         }
     }
