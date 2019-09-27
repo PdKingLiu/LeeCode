@@ -1,7 +1,6 @@
 package question;
 
-import java.util.HashSet;
-import java.util.List;
+import java.util.*;
 
 /**
  * @author liupeidong
@@ -33,10 +32,10 @@ public class Question_139_wordBreak {
 
 
     /*
-    * 动态规划
-    * O(n^2)
-    * s(0~i) 串的存在与否取决于 s(0~j) + s(j+1~i)
-    * */
+     * 动态规划
+     * O(n^2)
+     * s(0~i) 串的存在与否取决于 s(0~j) + s(j+1~i)
+     * */
 
     public boolean wordBreak(String s, List<String> wordDict) {
         if (s.length() <= 1) {
@@ -55,6 +54,35 @@ public class Question_139_wordBreak {
             }
         }
         return dp[s.length()];
+    }
+
+
+    /*
+    * BFS
+    * 每个结点的孩子是从父亲单词结束的下标开始
+    * 能够分隔出在单词列表的单词
+    * */
+
+    public boolean wordBreak2(String s, List<String> wordDict) {
+        HashSet<String> set = new HashSet<>(wordDict);
+        Queue<Integer> queue = new LinkedList<>();
+        queue.add(0);
+        boolean[] isVisit = new boolean[s.length() + 1];
+        while (!queue.isEmpty()) {
+            int start = queue.poll();
+            if (!isVisit[start]) {
+                for (int i = start + 1; i <= s.length(); i++) {
+                    if (set.contains(s.substring(start, i))) {
+                        queue.add(i);
+                        if (i == s.length()) {
+                            return true;
+                        }
+                    }
+                }
+                isVisit[start] = true;
+            }
+        }
+        return false;
     }
 
 }
