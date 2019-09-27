@@ -61,6 +61,8 @@ public class Question_139_wordBreak {
     * BFS
     * 每个结点的孩子是从父亲单词结束的下标开始
     * 能够分隔出在单词列表的单词
+    * 比如父亲：s(0,i)
+    * 孩子可以是：s(i+1,j) s(i+1,j+1) ...
     * */
 
     public boolean wordBreak2(String s, List<String> wordDict) {
@@ -82,6 +84,31 @@ public class Question_139_wordBreak {
                 isVisit[start] = true;
             }
         }
+        return false;
+    }
+
+
+    /*
+    * 记忆化回溯
+    * */
+
+    public boolean wordBreak3(String s, List<String> wordDict) {
+        return backtrack(0, s, new HashSet<String>(wordDict), new Boolean[s.length()]);
+    }
+    private boolean backtrack(int start, String s, HashSet<String> strings, Boolean[] booleans) {
+        if (start == s.length()) {
+            return true;
+        }
+        if (booleans[start] != null) {
+            return booleans[start];
+        }
+        for (int i = start + 1; i <= s.length(); i++) {
+            if (strings.contains(s.substring(start, i)) && backtrack(i, s, strings, booleans)) {
+                booleans[start] = true;
+                return true;
+            }
+        }
+        booleans[start] = false;
         return false;
     }
 
