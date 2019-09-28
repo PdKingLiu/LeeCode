@@ -20,8 +20,8 @@ public class Question_152_maxProduct {
         解释: 结果不能为 2, 因为 [-2,-1] 不是子数组。 */
 
     /*
-    * O(n^2) 暴力
-    * */
+     * O(n^2) 暴力
+     * */
 
     public int maxProduct(int[] nums) {
         int max = Integer.MIN_VALUE;
@@ -38,4 +38,29 @@ public class Question_152_maxProduct {
         }
         return max;
     }
+
+
+
+    /*
+     * 动态规划
+     * 维护两个值min和max 保存i-1最小最大乘积
+     * */
+
+    public int maxProduct2(int[] nums) {
+        int max = nums[0];
+        int min = nums[0];
+        int Max = nums[0];
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i] < 0) {
+                int t = max;
+                max = min;
+                min = t;
+            }
+            max = Math.max(max * nums[i], nums[i]);
+            min = Math.min(min * nums[i], nums[i]);
+            Max = Math.max(Max, max);
+        }
+        return Max;
+    }
+
 }
