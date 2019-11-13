@@ -25,6 +25,74 @@ public class Question_43_multiply {
         num1 和 num2 均不以零开头，除非是数字 0 本身。
         不能使用任何标准库的大数类型（比如 BigInteger）或直接将输入转换为整数来处理。 */
 
+
+    public String multiply3(String num1, String num2) {
+        if (num1.equals("0") || num2.equals("0")) {
+            return "0";
+        }
+        int[] arr = new int[num1.length() + num2.length()];
+        for (int i = num1.length() - 1; i >= 0; i--) {
+            int a1 = num1.charAt(i) - '0';
+            for (int j = num2.length() - 1; j >= 0; j--) {
+                int a2 = num2.charAt(j) - '0';
+                int tem = arr[i + j + 1] + a1 * a2;
+                arr[i + j + 1] = tem % 10;
+                arr[i + j] += tem / 10;
+            }
+        }
+        StringBuilder sb = new StringBuilder();
+        for (int i = arr[0] == 0 ? 1 : 0; i < arr.length; i++) {
+            sb.append(arr[i]);
+        }
+        return sb.toString();
+    }
+
+    // ----------------------------------
+
+    public String multiply2(String num1, String num2) {
+        if (num1.equals("0") || num2.equals("0")) {
+            return "0";
+        }
+        ArrayList<String> list = new ArrayList<>(num2.length());
+        for (int i = num2.length() - 1; i >= 0; i--) {
+            list.add(getResult(num1, Integer.parseInt(num2.substring(i, i + 1)), num2.length() - i - 1));
+        }
+        return getOneAdd(list);
+    }
+
+    private String getOneAdd(ArrayList<String> list) {
+        int maxLen = 0;
+
+        for (String s : list) {
+            maxLen = Math.max(s.length(), maxLen);
+        }
+
+        int[] jin = new int[maxLen];
+
+        for (int i = maxLen - 1; i >= 0; i--) {
+            for (String s : list) {
+                if (i - (maxLen - s.length()) >= 0) {
+                    jin[i] += s.charAt(s.length() - maxLen + i) - '0';
+                }
+            }
+        }
+        StringBuilder sb = new StringBuilder();
+        int jinTem = 0;
+        int result;
+        for (int i = jin.length - 1; i >= 0; i--) {
+            jinTem += jin[i];
+            result = jinTem % 10;
+            jinTem = jinTem / 10;
+            sb.append(result);
+        }
+        if (jinTem != 0) {
+            sb.append(jinTem);
+        }
+        return sb.reverse().toString();
+    }
+
+    //---------------------------------------
+
     public String multiply(String num1, String num2) {
         if (num1.equals("0") || num2.equals("0")) {
             return "0";
