@@ -37,6 +37,29 @@ public class Question_124_maxPathSum {
         输出: 42 */
 
     /*
+    * DFS 1ms
+    * */
+
+    int M = Integer.MIN_VALUE;
+
+    public int maxPathSum2(TreeNode root) {
+        DFS2(root);
+        return M;
+    }
+
+    private int DFS2(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+        int left = Math.max(DFS2(root.left), 0);
+        int right = Math.max(DFS2(root.right), 0);
+        M = Math.max(M, root.val + left + right);
+        return root.val + Math.max(left, right);
+    }
+
+    //---------------------------------------------------
+
+    /*
      * DFS+BFS 200ms
      * */
 
