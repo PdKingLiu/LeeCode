@@ -33,10 +33,29 @@ public class Question_235_lowestCommonAncestor {
         所有节点的值都是唯一的。
         p、q 为不同节点且均存在于给定的二叉搜索树中。 */
 
+
+    /*
+     * emmm
+     * 忘记这个是二叉树了
+     * 直接递归找就可以了
+     * */
+
+    public TreeNode lowestCommonAncestor2(TreeNode root, TreeNode p, TreeNode q) {
+        if (root == null) {
+            return null;
+        }
+        if (p.val < root.val && q.val < root.val) {
+            return lowestCommonAncestor(root.left, q, p);
+        } else if (p.val > root.val && root.val < q.val) {
+            return lowestCommonAncestor(root.right, q, p);
+        } else {
+            return root;
+        }
+    }
+
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
-        int height;
         TreeNode result = null;
         while (!queue.isEmpty()) {
             int size = queue.size();
@@ -59,8 +78,6 @@ public class Question_235_lowestCommonAncestor {
     public boolean BFS(TreeNode root, TreeNode p, TreeNode q) {
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
-        int height;
-        TreeNode result;
         boolean[] isFind = {false, false};
         while (!queue.isEmpty()) {
             int size = queue.size();
